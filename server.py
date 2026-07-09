@@ -9,7 +9,7 @@ def render_index_page():
 
 @app.route("/emotionDetector")
 def emotion_detection():
-    text_to_analyze = request.args.get("testToAnalyze")
+    text_to_analyze = request.args.get("textToAnalyze")
 
     response = emotion_detector(text_to_analyze)
 
